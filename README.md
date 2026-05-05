@@ -22,11 +22,11 @@ This solution integrates multiple cloud platforms and technologies:
 
 ## Tech Stack
 
-- :contentReference[oaicite:1]{index=1}
-- :contentReference[oaicite:2]{index=2}
-- :contentReference[oaicite:3]{index=3}
-- :contentReference[oaicite:4]{index=4}
-- :contentReference[oaicite:5]{index=5}
+- Azure
+- Snowflake
+- GCP
+- Terraform
+- Kubernetes
 - Python
 - SQL
 - YAML
