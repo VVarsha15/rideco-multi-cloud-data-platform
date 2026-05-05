@@ -1,0 +1,18 @@
+pickup_city,vehicle_type,total_trips,cash_trips,cash_pct,card_trips,wallet_trips,corporate_trips
+San Jose,Comfort,13,7,53.85,1,2,3
+Houston,Premium,2,1,50.0,0,0,1
+San Diego,Comfort,19,9,47.37,4,4,2
+San Diego,Motorbike,15,7,46.67,4,4,0
+Chicago,SUV,13,6,46.15,3,2,2
+Los Angeles,Motorbike,9,4,44.44,2,2,1
+Philadelphia,Economy,7,3,42.86,1,1,2
+San Diego,Electric,34,14,41.18,8,6,6
+San Antonio,SUV,8,3,37.5,2,3,0
+San Diego,Premium,23,8,34.78,3,4,8
+Phoenix,Motorbike,41,14,34.15,7,9,11
+Phoenix,Premium,24,8,33.33,3,5,8
+New York,Premium,15,5,33.33,5,4,1
+Phoenix,SUV,12,4,33.33,3,1,4
+Houston,Electric,16,5,31.25,5,1,5
+San Diego,Economy,45,14,31.11,7,15,9
+San Jose,Premium,29,9,31.03,7,7,6

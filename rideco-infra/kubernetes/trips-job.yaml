@@ -1,0 +1,47 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: trips-ingestion
+spec:
+  backoffLimit: 2
+  template:
+    spec:
+      containers:
+      - name: trips-container
+        image: python:3.10
+        command:
+        - sh
+        - -c
+        - |
+          pip install azure-storage-blob && \
+          python /app/upload_trips.py
+
+        volumeMounts:
+        - name: data-volume
+          mountPath: /data
+        - name: script-volume
+          mountPath: /app
+
+        env:
+        - name: ADLS_CONTAINER
+          valueFrom:
+            configMapKeyRef:
+              name: rideco-config
+              key: ADLS_CONTAINER
+
+        - name: ADLS_CONNECTION_STRING
+          valueFrom:
+            secretKeyRef:
+              name: rideco-secret
+              key: ADLS_CONNECTION_STRING
+
+      restartPolicy: Never
+
+      volumes:
+      - name: data-volume
+        configMap:
+          name: trips-data
+
+      - name: script-volume
+        configMap:
+          name: trips-script

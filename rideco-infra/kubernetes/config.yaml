@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: rideco-config
+data:
+  ENV: dev
+  DATASET: trips
